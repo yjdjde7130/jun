@@ -1,11 +1,14 @@
 package net.jun.dao.impl;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import net.jun.dao.ISimpleDao;
-import org.mybatis.spring.support.SqlSessionDaoSupport;
+import net.jun.entity.Simple;
+import org.springframework.stereotype.Repository;
 
-public class SimpleDaoImpl extends SqlSessionDaoSupport implements ISimpleDao {
+@Repository("simpleDao")
+public class SimpleDaoImpl extends BaseDaoImpl<Simple> implements ISimpleDao {
 
 	public String getUserInfo(Map<String, Object> map) {
 		Map<String, Object> retMap = getSqlSession().selectOne(
@@ -24,5 +27,35 @@ public class SimpleDaoImpl extends SqlSessionDaoSupport implements ISimpleDao {
 		getSqlSession().insert("simple.insertUser", paramMap);
 		return retStr;
 
+	}
+
+	@Override
+	public List<Simple> selectList(Simple t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Simple selectOneById(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int insert(Simple t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int update(Simple t) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(Simple t) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

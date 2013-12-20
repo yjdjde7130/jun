@@ -13,6 +13,8 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<mvc:annotation-driven></mvc:annotation-driven>
 	<!-- 自动检测controller -->
 	<context:component-scan base-package="net.jun.controller"></context:component-scan>
+	<context:component-scan base-package="net.jun.service"></context:component-scan>
+	<context:component-scan base-package="net.jun.dao"></context:component-scan>
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass"

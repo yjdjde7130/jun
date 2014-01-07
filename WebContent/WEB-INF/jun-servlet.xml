@@ -15,6 +15,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<context:component-scan base-package="net.jun.controller"></context:component-scan>
 	<context:component-scan base-package="net.jun.service"></context:component-scan>
 	<context:component-scan base-package="net.jun.dao"></context:component-scan>
+	<!-- 配置SpringMVC的视图解析器 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="viewClass"
@@ -22,4 +23,10 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 		<property name="prefix" value="/WEB-INF/jsp/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
+	<!-- 收到相应请求后直接选择相应的视图 -->
+	<mvc:view-controller path="/" view-name="forward:/login.jsp" />
+	<!-- 逻辑静态资源路径到物理静态资源路径的支持 -->
+	<mvc:resources mapping="/js/**" location="/WEB-INF/resources/js/" />
+	<mvc:resources mapping="/css/**" location="/WEB-INF/resources/css/" />
+	<mvc:resources mapping="/images/**" location="/WEB-INF/resources/images/" />
 </beans>

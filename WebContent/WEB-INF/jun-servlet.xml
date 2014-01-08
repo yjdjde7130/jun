@@ -10,11 +10,11 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
 	<!-- springMVC支持注释 -->
-	<mvc:annotation-driven></mvc:annotation-driven>
+	<mvc:annotation-driven />
 	<!-- 自动检测controller,service,dao -->
-	<context:component-scan base-package="net.jun.controller"></context:component-scan>
-	<context:component-scan base-package="net.jun.service"></context:component-scan>
-	<context:component-scan base-package="net.jun.dao"></context:component-scan>
+	<context:component-scan base-package="net.jun.controller" />
+	<context:component-scan base-package="net.jun.service" />
+	<context:component-scan base-package="net.jun.dao" />
 	<!-- 配置SpringMVC的视图解析器 -->
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

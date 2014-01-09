@@ -9,13 +9,21 @@ import org.apache.shiro.subject.PrincipalCollection;
 
 public class MyRealm extends AuthorizingRealm{
 
+	/**
+	 * 授权方法
+	 */
 	protected AuthorizationInfo doGetAuthorizationInfo(
 			PrincipalCollection principals) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * 认证方法
+	 */
 	protected AuthenticationInfo doGetAuthenticationInfo(
 			AuthenticationToken token) throws AuthenticationException {
+		// TODO Auto-generated method stub
 		return null;
 	}
 

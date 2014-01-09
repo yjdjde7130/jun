@@ -3,22 +3,17 @@
 <head>
 <title>Bootstrap 101 Template</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap -->
-<link href="resources/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<h1>Hello, world!</h1>
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="resources/js/jquery-1.10.2.min.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="resources/js/bootstrap.min.js"></script>
+	<div id="y123" title="uuuuu" />
+	<script type="text/javascript">
+		alert(123);
+		alert($("#y123").attr("title"));
+	</script>
 </body>
 </html>

@@ -97,13 +97,27 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
+	<bean id="myRealm" class="net.jun.security.shiro.realm.MyRealm" />
+
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="myRealm" />
+	</bean>
+
 	<!-- Shiro主过滤器 -->
 	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
 		<property name="securityManager" ref="securityManager" />
+		<property name="loginUrl" value="/jsp/login.jsp" />
+		<property name="unauthorizedUrl" value="/unAuthorized.htm" />
+		<property name="filterChainDefinitions">
+			<value>
+				/login = anon
+				/user/** = authc
+				/role/edit/* = perms[role:edit]
+				/role/save = perms[role:edit]
+				/role/list = perms[role:view]
+				/** = authc
+			</value>
+		</property>
 	</bean>
-	
-	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">  
-    <property name="realm" ref="myRealm" />  
-</bean>
 
 </beans>

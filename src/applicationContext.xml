@@ -113,7 +113,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 				/js/** = anon
 				/css/** = anon
 				/images/** = anon
-				/user/** = authc
+				/login/** = anon
 				/role/edit/* = perms[role:edit]
 				/role/save = perms[role:edit]
 				/role/list = perms[role:view]

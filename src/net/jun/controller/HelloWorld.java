@@ -28,6 +28,11 @@ public class HelloWorld {
 		model.addAttribute("liu", "pepe");
 		return "hello";
 	}
+	
+	@RequestMapping("/login")
+	public String login(){
+		return "login/login";
+	}
 
 	@RequestMapping("/hello1")
 	public String hello1(

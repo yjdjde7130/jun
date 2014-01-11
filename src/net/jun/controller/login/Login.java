@@ -1,6 +1,7 @@
 package net.jun.controller.login;
 
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
@@ -17,7 +18,12 @@ public class Login {
 				password);
 		token.setRememberMe(true);
 		Subject user = SecurityUtils.getSubject();
-		user.login(token);
+		try {
+			user.login(token);
+		} catch (IncorrectCredentialsException e) {
+			System.out.println("ÃÜÂë²»ÕýÈ·!"); 
+		}
+		
 		return "redirect:test";
 	}
 	

@@ -49,7 +49,7 @@ Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-templa
 	<!-- BEGIN LOGIN -->
 	<div class="content">
 		<!-- BEGIN LOGIN FORM -->
-		<form class="login-form" action="index.html" method="post">
+		<form class="login-form" action="login" method="post">
 			<h3 class="form-title">Login to your account</h3>
 			<div class="alert alert-danger display-hide">
 				<button class="close" data-close="alert"></button>

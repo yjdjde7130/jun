@@ -27,7 +27,5 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 	<mvc:view-controller path="/"
 		view-name="forward:/WEB-INF/jsp/login/login.jsp" />
 	<!-- 逻辑静态资源路径到物理静态资源路径的支持 -->
-	<mvc:resources mapping="/js/**" location="/WEB-INF/resources/js/" />
-	<mvc:resources mapping="/css/**" location="/WEB-INF/resources/css/" />
-	<mvc:resources mapping="/images/**" location="/WEB-INF/resources/images/" />
+	<mvc:resources mapping="/assets/**" location="/WEB-INF/assets/" />
 </beans>

@@ -90,6 +90,11 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-engine</artifactId>
+			<version>5.14</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>jun-webapp</finalName>

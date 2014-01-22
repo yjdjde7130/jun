@@ -1,0 +1,10 @@
+<!--shiro-->
+http://blog.csdn.net/jadyer/article/details/12208847
+http://kdboy.iteye.com/blog/1103794
+http://runtime.blog.51cto.com/7711135/1288690
+http://www.doc88.com/p-179329059119.html
+http://www.open-open.com/home/space-53513-do-blog-id-5479.html
+http://shiro.apache.org/configuration.html#Configuration-ProgrammaticConfiguration
+<!--Bootstrap-->
+http://www.w3cschool.cc/bootstrap/bootstrap-intro.html
+http://getbootstrap.com/getting-started/#template

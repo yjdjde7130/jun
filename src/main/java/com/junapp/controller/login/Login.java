@@ -21,15 +21,15 @@ public class Login {
 		try {
 			user.login(token);
 		} catch (IncorrectCredentialsException e) {
-			System.out.println("���벻��ȷ!"); 
+			System.out.println("密码错误");
 		}
-		
+
 		return "redirect:test";
 	}
-	
+
 	@RequestMapping("/test")
-	public String test(){
-		return "test/test";	
+	public String test() {
+		return "test/test";
 	}
 	//
 	// @RequestMapping("/login")

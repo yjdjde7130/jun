@@ -4,6 +4,7 @@
 		<!-- encoder 默认配置为PatternLayoutEncoder -->
 		<encoder>
 			<pattern>%d{yyyy-MM-DD HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+			<charset>UTF-8</charset>
 		</encoder>
 	</appender>
 

@@ -112,11 +112,9 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
 			<value>
 				/assets/** = anon
 				/login/** = anon
-				/role/edit/* =
-				perms[role:edit]
+				/role/edit/* = perms[role:edit]
 				/role/save = perms[role:edit]
-				/role/list =
-				perms[role:view]
+				/role/list = perms[role:view]
 				/** = authc
 			</value>
 		</property>

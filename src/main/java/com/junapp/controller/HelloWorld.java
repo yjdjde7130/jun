@@ -4,14 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Resource;
 import com.junapp.service.ISimpleService;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.UsernamePasswordToken;
-import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -43,7 +39,8 @@ public class HelloWorld {
 	// System.out.println("执行populateModel");
 	// return userId;
 	// }
-
+	
+	
 	@RequestMapping(value = "/hello2")
 	@ResponseBody
 	public String hello() {

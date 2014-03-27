@@ -9,18 +9,16 @@ import org.apache.shiro.util.Factory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+//shiro测试类
 public class ShiroTest {
 
 	private static Logger logger = LoggerFactory.getLogger(ShiroTest.class);
 
 	public static void main(String[] args) {
-		// Using the IniSecurityManagerFactory, which will use the an INI file
-		// as the security file.
 		try {
 			Factory<org.apache.shiro.mgt.SecurityManager> factory = new IniSecurityManagerFactory(
 					"classpath:shiro.ini");
 
-			// Setting up the SecurityManager...
 			org.apache.shiro.mgt.SecurityManager securityManager = factory
 					.getInstance();
 			SecurityUtils.setSecurityManager(securityManager);

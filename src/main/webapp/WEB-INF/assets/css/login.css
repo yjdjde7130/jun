@@ -1,0 +1,15 @@
+body {
+	padding-top: 160px;
+	padding-bottom: 160px;
+	background-color: #eee;
+}
+
+.loginForm-heading {
+	text-align: center;
+}
+
+.loginForm {
+	max-width: 330px;
+	padding: 15px;
+	margin: 0 auto;
+}

@@ -3,8 +3,10 @@ package com.junapp.dao.impl;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import com.junapp.dao.ISimpleDao;
 import com.junapp.entity.Simple;
+
 import org.springframework.stereotype.Repository;
 
 @Repository("simpleDao")
@@ -57,5 +59,11 @@ public class SimpleDaoImpl extends BaseDaoImpl<Simple> implements ISimpleDao {
 	public int delete(Simple t) {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+
+	@Override
+	public String queryUserInfo(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

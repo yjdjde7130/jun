@@ -7,5 +7,7 @@ import com.junapp.entity.Simple;
 public interface ISimpleDao extends IBaseDao<Simple> {
 
 	public String getUserInfo(Map<String, Object> map);
+	
+	public String queryUserInfo(Map<String, Object> map);
 
 }
